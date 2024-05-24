@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Ubezpieczenia Mariusz Morawski</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+<!-- <?php 
+
+if(isset($_POST['sendMailBtn'])){
+    $fullname = $_POST['Imie i nazwisko'];
+    $phonenumber = $_POST['Numer telefonu'];
+    $mailFrom = $_POST['Email'];
+    $$pesel = $_POST['Pesel'];
+    $message = $_POST['Wiadomość'];
+
+    $mailTo = "niekurzakdaniel2@gmail.com";
+    $headers = array("From: ".emailFrom,
+    "Reply-To: niekurzakdaniel2@gmail.com",
+    "X-Mailer: PHP/" . PHP_VERSION
+);
+    $txt = "E-mail: ".$mailFrom."\n\n"."Imie i nazwisko:".$fullname."\n\n"."numer telefonu: ".$phonenumber."\n\n".$pesel."\n\n".$message;
+
+    mail($mailTo,"Ubezpieczenie",$txt,$headers);
+    header("Location: index.php?mailSend");
+    
+}
+?> -->
+<!-- START NAV  -->
+<nav id="navbar" class="navbar navbar-expand-lg py-3 sticky-top navbar-dark bg-white" >
+    <div class="container" style="padding:1rem 0 ">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/logo.svg" style="width: 220px" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#home">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Usługi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sales">Promocje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<!-- END NAV  -->
+
+<div id="logos-bar" class="py-3 navbar ">
+        <ul class="logos-bar__list">
+            <li class="logos-bar__item logos-bar__item--first"><img src="./img/loga/wiener.png" alt="wiener logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/warta.png" alt="warta logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/viennalife.png" alt="viennalife logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/unum.png" alt="unum logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/uniqa.png" alt="uniqa logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/tuz.png" alt="tuz logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/tuw.png" alt="tuw logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/signaliduna.png" alt="signaliduna logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/saltus.png" alt="saltus logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/pzu.png" alt="pzu logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/prudential.png" alt="prudential logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/proama.png" alt="proama logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/polisażycie.png" alt="polisazycie logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/openlife.png" alt="openlife logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/nationalenederlanden.png" alt="nationalenederlanden logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/mtu.png" alt="mtu logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/link4.png" alt="link4 logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/leadenhall.png" alt="leadenhall logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/interubezpieczenia(interpolska).png" alt="interubezpieczenia logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/interrisk.png" alt="interrisk logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/hdi.png" alt="hdi logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/generaliagro.png" alt="generaliagro logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/generali.png" alt="generali logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/ergohestia.png" alt="ergohestia logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/compensa.png" alt="compensa logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/aviva.png" alt="aviva logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/allianz.png" alt="alianz logo"></li>
+            <li class="logos-bar__item"><img src="./img/loga/aegon.png" alt="aegon logo"></li>
+        </ul>
+</div>
+   <!-- HERO -->
+<div class="hero align-items-center" id="home">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="hero__text-box ">
+                    <h3 class="display-4 text-white hero__primary">Ubezpieczenia <span style="word-wrap"><h3 class="display-4 text-white hero__primary">Mariusz Morawski</h3></span></h3>
+                    <h5 class="text-white my-3 hero__secondary">Profesionalny zespół oferujący ubezpieczenia</h5>
+                    <a href="#services" id="hero__btn" class="btn me-2 btn-primary hero__btn">Sprawdz nasze usługi</a>
+            </div>
+        </div>
+    </div><!-- //HERO -->
+</div>
+   <!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-danger text-uppercase mb-4 ">Ubezpieczenia</h6>
+                    <h1 class="mb-3 section-label">Nasza oferta</h1>
+                    <p class="text--justify">Drogi kliencie, w naszym Biurze masz możliwość wyboru najlepszej oferty
+                        ubezpieczeniowej, zaoszczędza to Twój czas a przede wszystkim Twoje pieniądze. W
+                        każdym zakresie ubezpieczenia posiadamy wiele propozycji przez co, nigdy nie jesteś
+                        skazany na ubezpieczenie się w konkretnej firmie. Dany produkt dobieramy zawsze pod
+                        indywidualne wymagania Klienta.</p>
+            </div>
+        </div>
+        <div class="container mt-5 mb-5 service-icons p-5">
+            <div class="row g-4 justify-content-between   ">
+                <div class="col-lg-6 icon-active " data-name="Nr Rejestracyjny">
+                    <div class="service-icon__item card-effect bounceInUp" data-name="Nr Rejestracyjny">
+                        <div class="iconboxcenter" data-name="Nr Rejestracyjny">
+                            <div class="iconbox" data-name="Nr Rejestracyjny">
+                                <img class = "iconbox__icon" src="./img/car-insurance-cover-icon.svg" alt="one human" data-name="Nr Rejestracyjny">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text" data-name="Nr Rejestracyjny">Ubezpieczenie samochodu</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 icon-active" data-name="Wartość domu/mieszkania">
+                    <div class="service-icon__item card-effect bounceInUp" data-name="Wartość domu/mieszkania">
+                        <div class="iconboxcenter" data-name="Wartość domu/mieszkania">
+                            <div class="iconbox" data-name="Wartość domu/mieszkania">
+                                <img class = "iconbox__icon" src="./img/house-key-icon.svg" alt="one human" data-name="Wartość domu/mieszkania">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text" data-name="Wartość domu/mieszkania">Ubezpieczenie nieruchomości</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 icon-active" data-name="Wyjazd do">
+                    <div class="service-icon__item card-effect bounceInUp" data-name="Wyjazd do">
+                        <div class="iconboxcenter"data-name="Wyjazd do">
+                            <div class="iconbox"data-name="Wyjazd do">
+                                <img class = "iconbox__icon" src="./img/business-trip-icon.svg" alt="one human" data-name="Wyjazd do">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text" data-name="Wyjazd do">Ubezpieczenie turystyczne</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 icon-active" data-name="Imie i nazwisko">
+                    <div class="service-icon__item card-effect bounceInUp" data-name="Imie i nazwisko">
+                        <div class="iconboxcenter" data-name="Imie i nazwisko">
+                            <div class="iconbox"data-name="Imie i nazwisko">
+                                <img class = "iconbox__icon" src="./img/healthy-heart-icon.svg" alt="one human"data-name="Imie i nazwisko">
+                        </div>
+                        </div>
+          
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text" data-name="Imie i nazwisko">Ubezpieczenie na życie</h5>
+                    </div>
+                </div>
+                <a href="https://klient.interrisk.pl/eduplusofertaindywidualna" class="col-lg-6 icon-hiden ">
+                    <div class="service-icon__item card-effect bounceInUp service-icon-fifth">
+                        <div class="iconboxcenter">
+                            <div class="iconbox">
+                                <img class = "iconbox__icon" src="./img/child-hospital-doctor-icon.svg" alt="one human">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text">Ubezpieczenie NNW Dziecka <span class="service-icon__sub-text">taniej z kodem kg6p2g</span></h5>
+                    </div>
+                </a>
+                <a  href="https://www.pzu.pl/dla-ciebie-i-rodziny/zycie-i-zdrowie/ochrona-zdrowia/ubezpieczenie-dla-rowerzystow" class="col-lg-6 icon-hiden">
+                    <div class="service-icon__item card-effect bounceInUp  service-icon-sixth">
+                        <div class="iconboxcenter">
+                            <div class="iconbox">
+                                <img class = "iconbox__icon" src="./img/tandem-bike-icon.svg" alt="one human">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text">Ubezpieczenie roweru</h5>
+                    </div>
+                </a>
+                <a href="https://www.warta.pl/dla-firmy/" class="col-lg-6 icon-hiden">
+                    <div class="service-icon__item card-effect bounceInUp">
+                        <div class="iconboxcenter">
+                            <div class="iconbox">
+                                <img class = "iconbox__icon" src="./img/company-enterprise-icon.svg" alt="one human">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text">Ubezpieczenie firmowe</h5>
+                    </div>
+                </a>
+                <a href="https://www.compensa.pl/ubezpieczenie/rolne-ubezpieczenia-dobrowolne/" class="col-lg-6 icon-hiden">
+                    <div class="service-icon__item card-effect bounceInUp">
+                        <div class="iconboxcenter">
+                            <div class="iconbox">
+                                <img class = "iconbox__icon" src="./img/harvesting-icon.svg" alt="one human">
+                        </div>
+                        </div>
+                        <h5 class="mt-5 mb-5 text-center service-icon__item_text">Ubezpieczenie rolne</h5>
+                    </div>
+                </a>
+                <div class="col-lg-12" style="text-align:center">
+                <button id="showMoreIconsBtn" class="btn me-2 btn-primary hero__btn btn-hiden">Pokaż więcej</button>
+                    </div>
+                </div>
+        <div class="row g-4 services-items ">
+            <div class="col-lg-6 col-sm-12 ">
+                <div class="service card-effect bounceInUp">
+                    <div class="iconboxcenter">
+                        <div class="iconbox">
+                                <img class = "iconbox__icon" src="./img/human-icon.svg" alt="one human">
+                        </div>
+                    </div>
+                        <h5 class="mt-5 mb-5 text-center">Klienci Indywidualni</h5>
+                        <ul >
+                            <li>
+                                <p>Ubezpieczenie pojazdu od uszkodzenia i kradzieży </p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie OC kierowcy</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie NNW kierowcy</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie assistance</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie mieszkania</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie domu</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie domu w trakcie budowy</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie OC w życiu prywatnym</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie OC w związku z wykonywanym zawodem</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie NNW</p>
+                            </li>
+                            <li>
+                                <p>Indywidualne ubezpieczenie na życie</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie kosztów leczenia za granicą</p>
+                            </li>
+                            <li>
+                                <p>Otwarty Fundusz Emerytalny</p>
+                            </li>
+                            <li>
+                                <p>Fundusze Inwestycyjne - III filar</p>
+                            </li>
+                            <li>
+                                <p>Indywidualne Konta Zabezpieczenia Emerytalnego (IKZE)</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie ochrony prawnej</p>
+                            </li>
+                            <li>
+                                <p>Inne</p>
+                            </li>
+                        </ul>
+                     
+                </div>
+            </div>
+                <div class="col-lg-6 col-sm-12 ">
+                    <div class="service card-effect bounceInUp">
+                        <div class="iconbox">
+                            <img class = "iconbox__icon iconbox__icon--large" src="./img/many-human-icon.svg" alt="one human">
+                    </div>
+                        <h5 class="mt-5 mb-5 text-center">Klienci Firmowi</h5>
+                        <ul>
+                            <li>
+                                <p>Grupowe/Pracownicze ubezpieczenia na życie</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie majątku od ognia i innych zdarzeń losowych</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie majątku od kradzieży z włamaniem</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie szyb od stłuczenia</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie elektroniki od wszystkich ryzyk</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie OC z tytułu prowadzenia działalności gospodarczej</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie OC z tytułu wykonywanego zawodu</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie NNW pracowników</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie środków transportu (FLOTA)</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie towaru w transporcie (CARGO)</p>
+                            </li>
+                            <li>
+                                <p>Ubezpieczenie budowlano-montażowe</p>
+                            </li>
+                            <li>
+                                <p>Gwarancje ubezpieczeniowe</p>
+                            </li>
+                            <li>
+                                <p>OC Przewoźnika w ruchu krajowym i międzynarodowym</p>
+                            </li>
+                            <li>
+                                <p>Inne</p>
+                            </li>
+                        </ul>
+                     
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+     
+    </div>
+
+</section><!-- SERVICES -->
+    <!-- FEATURES -->
+<section id="about-us" >
+            <div class="row w-100 bg-light about-us__element about-us__element--first mb-4" >
+                
+            <div class="col-lg-6 col-img about-us-img about-us-img--first"></div>
+                <div class="col-lg-6 py-5">
+                    
+                <div class="container-fluid about-us-container">
+                    <div class="row">
+                        
+                        <div class="col-md-10 offset-md-1">
+                            <h6 class="text-danger text-uppercase mb-4">O nas</h6>
+                            <h2 class="smaller-text-spacing mb-3 about-us__h2">Jeśli szukasz kompleksowej obsługi ubezpieczeniowej opartej na wieloletnim
+                                doświadczeniu to zapraszamy do nas!</h2>
+                            <p class="text--justify">Klientom, którym zależy na rzetelnej i uczciwej obsłudze ubezpieczeniowej
+                                polecamy nasze usługi. Szeroki wachlarz ubezpieczeń kilkunastu Towarzystw
+                                Ubezpieczeniowych pozwala na dobranie oferty dla każdego klienta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 bg-light about-us__element about-us__element--second mb-4" >
+            
+            <div class="col-lg-6 py-5">
+            <div class="container-fluid about-us-container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h2 class="smaller-text-spacing mb-3 about-us__h2">Dlaczego powinniście Państwo wybrać nasze usługi?</h2>
+                        <p class="text--justify ">Działamy stacjonarnie od 2017 roku, a wcześniej zdobywaliśmy wiedzę i długoletnie
+                            doświadczenie współpracując z największymi Towarzystwami Ubezpieczeń na rynku
+                            Polskim. Nasz wykwalifikowany zespół to gwarancja wysokiej jakości świadczonych usług.
+                            Nasi pracownicy charakteryzują się szeroką i szczegółową wiedzą ubezpieczeniową, a
+                            każdego z klientów obejmują specjalną, wysoce zindywidualizowaną opieką. Dzięki nam
+                            nigdy nie zapomnisz o upływającym terminie polisy, nie podejmiesz niekorzystnej decyzji i
+                            nie stracisz w wypadku wystąpienia szkody. Zaufało nam już liczne grono klientów,
+                            powierzając nam do ubezpieczenia swój majątek. Mamy nadzieję, że zakres oraz jakość usług
+                            świadczonych przez nasze Biuro spełni Twoje oczekiwania i pozwoli Ci czuć się bezpiecznie
+                            i pewnie. Zaufaj naszej wiedzy i doświadczeniu!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-img about-us-img about-us-img--second"></div>
+    </div>
+    <div class="row w-100 bg-light about-us__element about-us__element--third mb-4" >
+        <div class="col-lg-6 col-img about-us-img about-us-img--third"></div>
+        <div class="col-lg-6 py-5">
+        <div class="container-fluid about-us-container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h2 class="smaller-text-spacing about-us__h2">Co możemy Ci zaoferować?</h2>
+                    <p class="text--justify mb-3">Nasze Biuro specjalizuje się w sprzedaży ubezpieczeń komunikacyjnych, majątkowych,
+                        życiowych oraz grupowych ubezpieczeń w zakładach pracy. Mamy również doświadczenie w
+                        kompleksowym ubezpieczaniu dużych firm.
+                        W ofercie posiadamy produkty kilkunastu wiodących firm ubezpieczeniowych, które idealnie
+                        wpisują się w potrzeby naszego docelowego klienta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section><!-- FEATURES -->
+
+    <!-- SALE -->
+<section id="sales" class="bg-light">
+    <div class="container-fluid">
+        <div class="row  mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-danger text-uppercase mb-4 ">Promocje</h6>
+                <h1 class="section-label">Jesteśmy najlepsi a naszym klientom oferujemy najwyższe zniżki!</h1>
+            </div>
+        </div>
+        <div class="row w-100 g-4 ">
+            <div class="col-md-12 col-lg-4">
+                <div class="sale-item card-effect">
+                    <div class="sale-item__img">
+                        <img  src="img/sale-1.jpg" alt="home">
+                    </div>
+                    <h4 class="mt-4">Zniżka <span class="sale-percent">-55%</span></h4>
+                    <p>Dla każdego z nas dom stanowi ostoję spokoju i bezpieczeństwa, do której wracamy po
+                        strudzonym dniu. Czy jednak wystarczająco uważnie dbamy o to, co dla nas tak ważne?
+                        Proponujemy Państwu ubezpieczenie, które pozwoli zabezpieczyć dom bądź mieszkanie,
+                        będące niejednokrotnie dorobkiem całego życia. Warto zastanowić się nad rozwiązaniem
+                        wymagającym niewielkich środków finansowych, a oferującym szeroką ochronę i pewność w
+                        sytuacjach, których każdy z nas chciałby uniknąć!</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="sale-item card-effect">
+                    <div class="sale-item__img">
+                        <img  src="img/sale-2.jpg" alt="cut pricing">
+                    </div>
+                    <h4 class="mt-4">Zniżka <span class="sale-percent">-70%</span></h4>
+                    <p>Ty też w czasach kryzysu tniesz koszty i starasz się ograniczać dodatkowe wydatki? Każda z
+                        reklam zapewnia o najlepszej jakości i najniższej cenie? Sprawdź co na ten temat ma do
+                        powiedzenia osoba, która naprawdę zna całość reklamowanej oferty! Nasi klienci otrzymują
+                        najwyższe zniżki za bezszkodowość i najtańszą ofertę ubezpieczenia z dostępnych na rynku.
+                        Tylko u nas dodatkowe zniżki specjalne! </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="sale-item card-effect">
+                    <div class="sale-item__img">
+                        <img  src="img/sale-3.jpg" alt="journey">
+                    </div>
+                    <h4 class="mt-4">Zniżka <span class="sale-percent">-30%</span></h4>
+                    <p>Często podróżujesz i chcesz mieć pewność, że w czasie wyjazdu żaden nieprzewidziany
+                        wypadek nie pokrzyżuje Twoich planów? Twoja rodzina i Ty chcecie być przygotowani na
+                        wszelkie wypadki losowe podczas wypoczynku? Wyjeżdżasz do pracy do innego kraju? A
+                        może jesteś właścicielem firmy delegującej pracowników za granicę? Wykup ubezpieczenie
+                        turystyczne! Atrakcyjne zniżki i bonifikaty dla naszych klientów!</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section><!-- SALE -->
+
+<footer  id="contact">
+        <div class="footer">
+            <div class="container mt-5">
+                <div class="row gy-4">
+                    <div class="col-md-8 mx-auto text-center mb-5">
+                        <h6 class="text-danger text-uppercase" >Kontakt</h6>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <h1 class="text-white mb-3 mb-5 contact-label">Ubezpieczenia Mariusz Morawski</h1>
+                    </div>
+                    <div class="col-lg-6"  >
+                        <h5 class="text-white mb-3 contact-label">Zapraszamy do naszego biura w poniższych godzinach:</h5>
+                        <ul class="list-unstyled contact__hours"  >
+                            <li><h4 class="text-white mt-4 mb-3  contact_hours--item" ">Pon - Pt: 9:00 - 18:00</h2></li>
+                            <li><h4 class="text-white mb-3 contact_hours--item" >Sob: <span style="text-align:left" class="text-white mb-3 contact_hours--item contact_hours--item__inside">9:00 - 15:00</span></h4></li>
+                            <li class="contact_hours--description"><span class="break-line contact_hours--description">Po godzinie 18:00 możliwy dowóz polisy </span>
+                                do Klienta lub odbiór na terenie Częstochowy. </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 contact">
+                        <h5 class="text-white mb-3 contact-label">Dane kontaktowe</h5>
+                        <ul class="list-unstyled " >
+                            
+                            <li>Adres: ul. Przemysłowa 8, 98-355 Działoszyn</li>
+                            <li >E-mail: <a href="ubezpieczenia.oc@o2.pl">ubezpieczenia.oc@o2.pl</a></li>
+                            <li style="margin-top:2rem; margin-bottom:-0.5rem;">Numery telefonu:</li>
+                            <ul class="phone-numbers-col list-unstyled "  >
+                                <li >508-525-942</li>
+                                <li class="phone-number--second"> 509-111-011</li>
+                                <li  class="phone-number--third">509-111-140</li>
+                            </ul>
+                            <ul class="phone-numbers-col list-unstyled  ">
+                                <li>510-330-034</li>
+                                <li class="phone-number--five">513-900-861</li>
+                                <li class="phone-number--six">577-117-737</li>
+                            </ul>  
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 contact">
+                        <ul class="list-unstyled">
+                            <li>NIP: 7722184906</li>
+                            <li>REGON: 368013256</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 mx-auto text-center mt-5 mb-5" id="messageForm">
+                        <h1 class="section-label text-white">Skontaktuj się z nami</h1>   
+                    </div>
+                <div class="row"  >
+                <div class="col-md-8 mx-auto text-center mt-5 mb-5" >
+                        <h1 class="section-label text-white">Potrzebujesz szybkiej oferty? <span><h1 class="section-label text-white form-info-label">Uzupełnij poniższe pola! </h1></span> A my oddzwonimy z korzystną ofertą.</h1>   
+                    </div>
+                            <div class="col-lg-12 mb-5">
+                            <form  method="post"  action="https://formsubmit.co/ubezpieczenia.oc@o2.pl" class="row g-4 justify-content-center " id="messageFormSender">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="Imie i nazwisko" placeholder="Imie i nazwisko" id="flexInput" required>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="number" class="form-control" name="Numer telefonu" placeholder="Numer telefonu" required>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="Pesel" placeholder="Pesel" required>
+                            </div>
+                            <div class="col-md-10">
+                                <textarea  id="message" cols="30" rows="5" name="Wiadomość" class="form-control"
+                                placeholder="Wiadomość" required></textarea>
+                            </div>
+                            <div class="col-md-10 d-grid">
+                                <button class="btn btn-primary form-btn"  type="submit" >Wyślij wiadomość</button>
+                            </div>
+                        </form>
+                            </div>
+                        </div>
+            <div class="container mt-5">
+                <div class="row">
+                <iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.72512251141!2d18.870462715914197!3d51.11353154724496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47109f051c22e7d3%3A0x5eecbc8ab32a9961!2sPrzemys%C5%82owa%208%2C%2098-355%20Dzia%C5%82oszyn!5e0!3m2!1spl!2spl!4v1659451819289!5m2!1spl!2spl" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>      
+                </div>
+
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
